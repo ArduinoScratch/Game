@@ -1,3 +1,2 @@
-Estou fazendo MiniGame Friday Night Funkin Dad_Dearest, ainda vai levar muito tempo mas fiquem ligados porque, algum dia, já possa estar pronto.
-
-Até Mais!
+## Estou fazendo Friday Night Funkin Dad_Battle 1 fase.
+Ainda levarei um tempo para estar pronto.
