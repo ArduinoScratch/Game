@@ -6,7 +6,6 @@ def load_players(window):
     # Fundo
     fundo = pygame.image.load("Image/stage.webp")
     fundo = pygame.transform.scale(fundo, (1280, 720))
-    # (X , Y)
     window.blit(fundo, (0, 0))
 
     # Arrows1
@@ -18,16 +17,6 @@ def load_players(window):
     arrows2 = pygame.image.load("Image/arrows.png")
     arrows2 = pygame.transform.scale(arrows2, (300, 90))
     window.blit(arrows2, (300, 100))
-
-    # Left Arrow
-    left_arrow = pygame.image.load("Image/left.png")
-    left_arrow = pygame.transform.scale(left_arrow, (80, 80))
-    y_left = 715
-    # Right Arrow
-    right_arrow = pygame.image.load("Image/right.png")
-    right_arrow = pygame.transform.scale(right_arrow, (81, 91))
-    y_right = 715
-    window.blit(right_arrow, (525, y_right))
 
     # DadDearest
     dadearest = pygame.image.load("Image/dad_battle.gif")
@@ -54,3 +43,13 @@ def load_down(window, y_down):
     down_arrow = pygame.image.load("Image/down.png")
     down_arrow = pygame.transform.scale(down_arrow, (80, 80))
     window.blit(down_arrow, (370, y_down))
+
+def load_right(window, y_right):
+    right_arrow = pygame.image.load("Image/right.png")
+    right_arrow = pygame.transform.scale(right_arrow, (81, 91))
+    window.blit(right_arrow, (525, y_right))
+
+def load_left(window, y_left):
+    left_arrow = pygame.image.load("Image/left.png")
+    left_arrow = pygame.transform.scale(left_arrow, (92, 78))
+    window.blit(left_arrow, (290, y_left))
