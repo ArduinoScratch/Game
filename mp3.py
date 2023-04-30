@@ -8,5 +8,3 @@ def play_music():
     pygame.mixer.music.load("Sounds/bopebbo.mp3")
 
     pygame.mixer.music.play()
-
-play_music()
