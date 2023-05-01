@@ -38,7 +38,6 @@ dadearest(window)
 arrows(window)
 
 
-
 # Loop
 loop = True
 while loop:
@@ -49,54 +48,25 @@ while loop:
             pygame.quit()
             quit()
 
-    # Movimentação
-    # Oppponent
-    y_up -= 17
-    if y_up <= -70:
-        y_up = 715
-    y_down -= 15
-    if y_down <= -70:
-        y_down = 715
-    y_right -= 13
-    if y_right <= -70:
-        y_right = 715
-    y_left -= 19
-    if y_left <= -70:
-        y_left = 715
-    #Player
-    y_left1 -= 14
-    if y_left1 <= -70:
-        y_left1 = 715
-    y_down1 -= 10
-    if y_down1 <= -70:
-        y_down1 = 715
-    y_up1 -= 18
-    if y_up1 <= -70:
-        y_up1 = 715
-    y_right1 -= 23
-    if y_right1 <= -70:
-        y_right1 = 715
-
-
     # Atualizando Imagem de Fundo
     stage(window)
 
     # Colocando os Personagens9
     girlfriend(window)
-    boyfriend(window)
     dadearest(window)
     arrows(window)
+    boyfriend(window)
 
     # Carregando as Setas
     # Opponent
-    load_up(window, y_up)
-    load_down(window, y_down)
-    load_right(window, y_right)
-    load_left(window, y_left)
+    y_up = load_up(window, y_up)
+    y_down = load_down(window, y_down)
+    y_right = load_right(window, y_right)
+    y_left = load_left(window, y_left)
     # Player
-    load_left1(window, y_left1)
-    load_down1(window, y_down1)
-    load_up1(window, y_up1)
-    load_right1(window, y_right1)
+    y_left1 = load_left1(window, y_left1)
+    y_down1 = load_down1(window, y_down1)
+    y_up1 = load_up1(window, y_up1)
+    y_right1 = load_right1(window, y_right1)
 
     pygame.display.update()
