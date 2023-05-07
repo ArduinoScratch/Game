@@ -4,7 +4,7 @@ def load_up(window, y_up):
     up_arrow = pygame.image.load("Image/up.png")
     up_arrow = pygame.transform.scale(up_arrow, (80, 80))
     window.blit(up_arrow, (450, y_up))
-    y_up -= 17
+    y_up -= 16
     if y_up <= -70:
         y_up = 715
     return y_up
@@ -17,8 +17,6 @@ def load_down(window, y_down):
     y_down -= 15
     if y_down <= -70:
         y_down = 715
-    else:
-        y_down = y_down
     return y_down
 
 

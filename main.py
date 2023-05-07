@@ -24,6 +24,7 @@ y_right = 715
 mudar_foto_opponente_right = False
 load_right(window, y_right)
 y_left = 715
+mudar_foto_opponente_left = False
 load_left(window, y_left)
 y_left1 = 715
 load_left1(window, y_left1)
@@ -37,7 +38,7 @@ load_right1(window, y_right1)
 stage(window)
 girlfriend(window)
 boyfriend(window)
-dadearest(window, mudar_foto_opponente_up, mudar_foto_opponente_right, mudar_foto_opponente_down)
+dadearest(window, mudar_foto_opponente_up, mudar_foto_opponente_right, mudar_foto_opponente_down, mudar_foto_opponente_left)
 arrows(window)
 
 
@@ -56,27 +57,35 @@ while loop:
 
     # Colocando os Personagens9
     girlfriend(window)
-    dadearest(window, mudar_foto_opponente_up, mudar_foto_opponente_right, mudar_foto_opponente_down)
+    dadearest(window, mudar_foto_opponente_up, mudar_foto_opponente_right, mudar_foto_opponente_down, mudar_foto_opponente_left)
     arrows(window)
     boyfriend(window)
 
     # Carregando as Setas
     # Opponent
+    # Up
     y_up = load_up(window, y_up)
     if y_up > 39 and y_up < 151:
         mudar_foto_opponente_up = True
     else:
         mudar_foto_opponente_up = False
+    # Down
     y_down = load_down(window, y_down)
     if y_down > 39 and y_up < 151:
         mudar_foto_opponente_down = True
     else: mudar_foto_opponente_down = False
+    # Right
     y_right = load_right(window, y_right)
     if y_right > 39 and y_right < 151:
         mudar_foto_opponente_right = True
     else:
         mudar_foto_opponente_right = False
+    # Left
     y_left = load_left(window, y_left)
+    if y_left > 39 and y_left < 151:
+        mudar_foto_opponente_left = True
+    else:
+        mudar_foto_opponente_left = False
     # Player
     y_left1 = load_left1(window, y_left1)
     y_down1 = load_down1(window, y_down1)
