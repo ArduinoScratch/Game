@@ -1,4 +1,5 @@
 import pygame
+from PIL import Image
 
 def girlfriend(window):
     girlfriend = pygame.image.load("Image/girlfriend.gif")

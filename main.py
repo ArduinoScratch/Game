@@ -15,10 +15,13 @@ window = pygame.display.set_mode([1280, 720])
 
 pygame.display.set_caption("Friday Night Funkin - Dadbattle - Teclas: ASWD")
 y_up = 715
+mudar_foto_opponente_up = False
 load_up(window, y_up)
 y_down = 715
+mudar_foto_opponente_down = False
 load_down(window, y_down)
 y_right = 715
+mudar_foto_opponente_right = False
 load_right(window, y_right)
 y_left = 715
 load_left(window, y_left)
@@ -34,7 +37,7 @@ load_right1(window, y_right1)
 stage(window)
 girlfriend(window)
 boyfriend(window)
-dadearest(window)
+dadearest(window, mudar_foto_opponente_up, mudar_foto_opponente_right, mudar_foto_opponente_down)
 arrows(window)
 
 
@@ -53,15 +56,26 @@ while loop:
 
     # Colocando os Personagens9
     girlfriend(window)
-    dadearest(window)
+    dadearest(window, mudar_foto_opponente_up, mudar_foto_opponente_right, mudar_foto_opponente_down)
     arrows(window)
     boyfriend(window)
 
     # Carregando as Setas
     # Opponent
     y_up = load_up(window, y_up)
+    if y_up > 39 and y_up < 151:
+        mudar_foto_opponente_up = True
+    else:
+        mudar_foto_opponente_up = False
     y_down = load_down(window, y_down)
+    if y_down > 39 and y_up < 151:
+        mudar_foto_opponente_down = True
+    else: mudar_foto_opponente_down = False
     y_right = load_right(window, y_right)
+    if y_right > 39 and y_right < 151:
+        mudar_foto_opponente_right = True
+    else:
+        mudar_foto_opponente_right = False
     y_left = load_left(window, y_left)
     # Player
     y_left1 = load_left1(window, y_left1)

@@ -1,7 +1,6 @@
 import pygame
 
 def boyfriend(window):
-
     if pygame.key.get_pressed()[pygame.K_a]:
         img_position = 2
     elif pygame.key.get_pressed()[pygame.K_s]:

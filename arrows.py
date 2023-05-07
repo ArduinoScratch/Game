@@ -17,6 +17,8 @@ def load_down(window, y_down):
     y_down -= 15
     if y_down <= -70:
         y_down = 715
+    else:
+        y_down = y_down
     return y_down
 
 
@@ -67,6 +69,11 @@ def load_up1(window, y_up1):
     y_up1 -= 18
     if y_up1 <= -70:
         y_up1 = 715
+    if pygame.key.get_pressed()[pygame.K_w]:
+        if y_up1 > 39 and y_up1 < 151:
+            print("ganhou 1 ponto")
+        else:
+            print("perdeu um ponto")
     return y_up1
 
 
