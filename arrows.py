@@ -60,19 +60,24 @@ def load_down1(window, y_down1):
     return y_down1
 
 
-def load_up1(window, y_up1):
+def load_up1(window, y_up1, label_result):
     up_arrow = pygame.image.load("Image/up.png")
     up_arrow = pygame.transform.scale(up_arrow, (80, 80))
     window.blit(up_arrow, (870, y_up1))
     y_up1 -= 18
+    atualizar_nota("Beleza", window, label_result)
     if y_up1 <= -70:
         y_up1 = 715
     if pygame.key.get_pressed()[pygame.K_w]:
         if y_up1 > 39 and y_up1 < 151:
-            print("ganhou 1 ponto")
+            atualizar_nota("1", window, label_result)
         else:
-            print("perdeu um ponto")
+            atualizar_nota("0", window, label_result)
     return y_up1
+
+def atualizar_nota(nota, window, label_result):
+    label = label_result.render(nota, 1, (255,255,0))
+    window.blit(label, (610, 650))
 
 
 def load_right1(window, y_right1):
