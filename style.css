@@ -33,6 +33,38 @@
     transform: translate(-130%, -280%)
 }
 
+.img_left {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-403%, -750%)
+    /* Y = -290% */
+}
+
+.img_down {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-420%, -800%)
+    /* Y = -312% */
+}
+.img_up {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-293%, -860%);
+    /* Y = -286% */
+}
+
+.img_right {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-190%, -900%)
+    /* Y = -280% */
+}
+
+
 body {
     background: url('Image/stage.png') no-repeat;
     background-size: 100%;

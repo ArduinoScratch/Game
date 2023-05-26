@@ -1,11 +1,11 @@
 import pygame
-from mp3 import play_music
-from girlfriend import girlfriend
-from arrows import *
-from boyfriend import boyfriend
-from dadearest import dadearest
-from stage import stage
-from arrow_base import arrows
+from Python.mp3 import play_music
+from Python.girlfriend import girlfriend
+from Python.arrows import *
+from Python.boyfriend import boyfriend
+from Python.dadearest import dadearest
+from Python.stage import stage
+from Python.arrow_base import arrows
 # Play Music
 play_music()
 
