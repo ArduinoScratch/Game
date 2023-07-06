@@ -4,20 +4,19 @@ async function img_up() {
         while (y < 50) {
             y++;
             setTimeout(function () {
-                resolve(soma(y));
-            }, 100);
+                resolve(soma);
+            }, 3000);
         }
     });
     console.log(await myPromise);
 }
 
 
-function soma(y) {
-    y++;
+function soma() {
+    // y++;
     // if (y > -286) {
     //     y = await - 1000;
     // };
 }
-
 
 img_up();
