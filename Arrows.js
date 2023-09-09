@@ -1,6 +1,6 @@
 var img_up = document.getElementsByClassName(img_up);
 var loop = true;
-var y = -860;
+var y = 0;
     async function y(){
 while (loop) {
     y = y + 2; 
@@ -10,3 +10,4 @@ while (loop) {
     console.log(y);
     }
 }
+// -860;
